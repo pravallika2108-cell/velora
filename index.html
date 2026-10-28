@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VELORA — Maison de Mode | Style That Speaks</title>
+  <meta name="description" content="VELORA is a contemporary luxury fashion house. Discover editorial womenswear, menswear, dresses, outerwear, bags and accessories.">
+  <meta name="theme-color" content="#f6f2ea">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 fill=%22%23141210%22/%3E%3Ctext x=%2232%22 y=%2244%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 font-size=%2236%22 fill=%22%23f6f2ea%22%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Announcement bar -->
+  <div class="announcement" role="region" aria-label="Announcements">
+    <div class="announcement__track" aria-live="polite">
+      <p class="announcement__msg is-active">Complimentary shipping on orders over $500</p>
+      <p class="announcement__msg">The Autumn/Winter 2026 collection has arrived</p>
+      <p class="announcement__msg">Signature gift wrapping on every order</p>
+    </div>
+  </div>
+
+  <!-- Header / navigation -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <button class="icon-btn header__burger" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="burger"><span></span><span></span></span>
+      </button>
+
+      <nav class="nav nav--left" aria-label="Primary">
+        <ul>
+          <li><a href="#shop" data-category="New Arrivals">New In</a></li>
+          <li><a href="#shop" data-category="Women's Wear">Women</a></li>
+          <li><a href="#shop" data-category="Men's Wear">Men</a></li>
+          <li><a href="#shop" data-category="Dresses">Dresses</a></li>
+          <li><a href="#shop" data-category="Bags">Bags</a></li>
+        </ul>
+      </nav>
+
+      <a href="#top" class="logo" aria-label="VELORA home">VELORA</a>
+
+      <div class="header__actions">
+        <a href="#edit" class="nav-link hide-sm">The Edit</a>
+        <button class="icon-btn" id="searchBtn" aria-label="Search products">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+        </button>
+        <button class="icon-btn" id="wishlistBtn" aria-label="Open wishlist" aria-controls="wishlistDrawer" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.3a4.3 4.3 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20z"/></svg>
+          <span class="badge-count" id="wishlistCount" aria-hidden="true">0</span>
+        </button>
+        <button class="icon-btn" id="bagBtn" aria-label="Open shopping bag" aria-controls="bagDrawer" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+          <span class="badge-count" id="bagCount" aria-hidden="true">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Menu" role="dialog" aria-modal="true">
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+      <ul>
+        <li><a href="#shop" data-category="New Arrivals">New Arrivals</a></li>
+        <li><a href="#shop" data-category="Women's Wear">Women's Wear</a></li>
+        <li><a href="#shop" data-category="Men's Wear">Men's Wear</a></li>
+        <li><a href="#shop" data-category="Dresses">Dresses</a></li>
+        <li><a href="#shop" data-category="Outerwear">Outerwear</a></li>
+        <li><a href="#shop" data-category="Bags">Bags</a></li>
+        <li><a href="#shop" data-category="Accessories">Accessories</a></li>
+        <li><a href="#edit">The Edit</a></li>
+      </ul>
+    </nav>
+    <p class="mobile-menu__foot">Maison VELORA &mdash; Milano &middot; Paris &middot; Mumbai</p>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-label="VELORA Autumn/Winter 2026 campaign">
+      <div class="hero__media" aria-hidden="true">
+        <img class="hero__img" id="heroImg"
+             src="https://images.unsplash.com/photo-1571513722275-4b41940f54b8?auto=format&fit=crop&w=2000&q=80"
+             srcset="https://images.unsplash.com/photo-1571513722275-4b41940f54b8?auto=format&fit=crop&w=900&q=80 900w,
+                     https://images.unsplash.com/photo-1571513722275-4b41940f54b8?auto=format&fit=crop&w=1400&q=80 1400w,
+                     https://images.unsplash.com/photo-1571513722275-4b41940f54b8?auto=format&fit=crop&w=2000&q=80 2000w"
+             sizes="100vw" alt="" fetchpriority="high">
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow hero__eyebrow">Autumn / Winter 2026 Campaign</p>
+        <h1 class="hero__title" aria-label="Style that speaks">
+          <span class="line"><span class="word">STYLE</span></span>
+          <span class="line"><span class="word"><em>that</em></span></span>
+          <span class="line"><span class="word">SPEAKS</span></span>
+        </h1>
+        <p class="hero__lede">Quiet tailoring, sculpted silhouettes and fabrics that carry a story. A wardrobe composed with intention.</p>
+        <div class="hero__ctas">
+          <a href="#shop" class="btn btn--dark" data-category="All">Explore Collection</a>
+          <a href="#edit" class="btn btn--ghost">Discover the Edit</a>
+        </div>
+      </div>
+      <a href="#edit" class="hero__scroll" aria-label="Scroll to the edit"><span>Scroll</span><i></i></a>
+    </section>
+
+    <!-- Editorial -->
+    <section class="editorial section" id="edit" aria-labelledby="editTitle">
+      <header class="section-head reveal">
+        <p class="eyebrow">The Edit &mdash; Chapter IV</p>
+        <h2 class="display" id="editTitle">An ode to <em>quiet</em> luxury</h2>
+      </header>
+
+      <article class="story">
+        <figure class="story__media reveal reveal--clip">
+          <img src="https://images.unsplash.com/photo-1485462537746-965f33f7f6a7?auto=format&fit=crop&w=1200&q=80" alt="Model in a blush wool coat walking through a stone arcade" loading="lazy">
+        </figure>
+        <div class="story__text reveal reveal--right">
+          <span class="story__num">01</span>
+          <h3 class="story__title">The Architecture of Calm</h3>
+          <p>Cut from double-faced wool and finished entirely by hand, our coats are drawn with the restraint of an architect &mdash; clean lines, softened shoulders, nothing in excess.</p>
+          <a href="#shop" class="link-arrow" data-category="Outerwear">Shop Outerwear</a>
+        </div>
+      </article>
+
+      <article class="story story--reverse">
+        <figure class="story__media reveal reveal--clip">
+          <img src="https://images.unsplash.com/photo-1505022610485-0249ba5b3675?auto=format&fit=crop&w=1400&q=80" alt="Detail of a herringbone tweed blazer with leather strap" loading="lazy">
+        </figure>
+        <div class="story__text reveal reveal--left">
+          <span class="story__num">02</span>
+          <h3 class="story__title">A Gentleman's Texture</h3>
+          <p>Herringbone, flannel and brushed cashmere. Menswear that grows richer with every wear, tailored in Biella from cloths woven exclusively for the house.</p>
+          <a href="#shop" class="link-arrow" data-category="Men's Wear">Shop Menswear</a>
+        </div>
+      </article>
+
+      <article class="story">
+        <figure class="story__media reveal reveal--clip">
+          <img src="https://images.unsplash.com/photo-1617019114583-affb34d1b3cd?auto=format&fit=crop&w=1200&q=80" alt="Model in an ivory shirt dress and dark sunglasses in golden light" loading="lazy">
+        </figure>
+        <div class="story__text reveal reveal--right">
+          <span class="story__num">03</span>
+          <h3 class="story__title">Light, Worn Lightly</h3>
+          <p>Washed silks and Italian linens in shades of bone, sand and ivory &mdash; pieces made to move with you from the first light of morning to the last of the evening.</p>
+          <a href="#shop" class="link-arrow" data-category="Women's Wear">Shop Womenswear</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- New arrivals -->
+    <section class="arrivals section" id="new-arrivals" aria-labelledby="arrivalsTitle">
+      <header class="section-head section-head--row reveal">
+        <div>
+          <p class="eyebrow">Just Landed</p>
+          <h2 class="display" id="arrivalsTitle">New Arrivals</h2>
+        </div>
+        <a href="#shop" class="link-arrow" data-category="New Arrivals">View all new arrivals</a>
+      </header>
+      <div class="product-grid product-grid--four" id="arrivalsGrid"></div>
+    </section>
+
+    <!-- Seasonal campaign banner -->
+    <section class="campaign" id="campaign" aria-labelledby="campaignTitle">
+      <div class="campaign__media" aria-hidden="true">
+        <img class="campaign__img" src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=2000&q=80" alt="" loading="lazy">
+      </div>
+      <div class="campaign__content reveal">
+        <p class="eyebrow eyebrow--light">The Winter Atelier</p>
+        <h2 class="campaign__title" id="campaignTitle">Layers of<br><em>Distinction</em></h2>
+        <p>Cashmere, camel and lambskin &mdash; the season's outerwear, crafted to be inherited.</p>
+        <a href="#shop" class="btn btn--light" data-category="Outerwear">Shop the Campaign</a>
+      </div>
+    </section>
+
+    <!-- Curated collections -->
+    <section class="collections section" id="collections" aria-labelledby="collectionsTitle">
+      <header class="section-head reveal">
+        <p class="eyebrow">Curated For You</p>
+        <h2 class="display" id="collectionsTitle">The Collections</h2>
+      </header>
+      <div class="collections__grid">
+        <a href="#shop" class="tile tile--tall reveal" data-category="Women's Wear">
+          <img src="https://images.unsplash.com/photo-1583846717393-dc2412c95ed7?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy">
+          <span class="tile__label"><small>01</small>Women's Wear</span>
+        </a>
+        <a href="#shop" class="tile reveal" data-category="Men's Wear">
+          <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy">
+          <span class="tile__label"><small>02</small>Men's Wear</span>
+        </a>
+        <a href="#shop" class="tile reveal" data-category="Dresses">
+          <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy">
+          <span class="tile__label"><small>03</small>Dresses</span>
+        </a>
+        <a href="#shop" class="tile reveal" data-category="Bags">
+          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy">
+          <span class="tile__label"><small>04</small>Bags</span>
+        </a>
+        <a href="#shop" class="tile reveal" data-category="Accessories">
+          <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy">
+          <span class="tile__label"><small>05</small>Accessories</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="shop section" id="shop" aria-labelledby="shopTitle">
+      <header class="section-head reveal">
+        <p class="eyebrow">The Boutique</p>
+        <h2 class="display" id="shopTitle">Shop the Collection</h2>
+      </header>
+
+      <div class="toolbar reveal" role="search">
+        <div class="toolbar__search">
+          <label for="searchInput" class="sr-only">Search products</label>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+          <input type="search" id="searchInput" placeholder="Search coats, silk, bags&hellip;" autocomplete="off">
+        </div>
+        <div class="toolbar__controls">
+          <div class="field-inline price-filter">
+            <label for="priceRange">Max price <output id="priceOutput" for="priceRange">$3,000</output></label>
+            <input type="range" id="priceRange" min="100" max="3000" step="50" value="3000">
+          </div>
+          <div class="field-inline">
+            <label for="sortSelect">Sort by</label>
+            <div class="select-wrap">
+              <select id="sortSelect">
+                <option value="featured">Featured</option>
+                <option value="newest">Newest arrivals</option>
+                <option value="price-asc">Price: low to high</option>
+                <option value="price-desc">Price: high to low</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chips reveal" id="categoryChips" role="group" aria-label="Filter by category"></div>
+
+      <div class="shop__meta">
+        <p id="resultCount" aria-live="polite"></p>
+        <button class="text-btn" id="clearFilters" type="button">Clear filters</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <p class="display-sm">No pieces match your selection.</p>
+        <button class="btn btn--dark" type="button" id="emptyReset">Reset filters</button>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" aria-label="Client services">
+      <div class="service reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.5"/><circle cx="17" cy="17.5" r="1.5"/></svg>
+        <h3>Complimentary Shipping</h3><p>On all orders over $500</p>
+      </div>
+      <div class="service reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h16v11H4zM2.5 6h19v3h-19zM12 6v14M12 6c-1-3-5-3-5-1s3 1 5 1c2 0 5 1 5-1s-4-2-5 1"/></svg>
+        <h3>Signature Packaging</h3><p>Every piece, gift-wrapped by hand</p>
+      </div>
+      <div class="service reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4"/></svg>
+        <h3>30-Day Returns</h3><p>Effortless returns and exchanges</p>
+      </div>
+      <div class="service reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 18v-5a7 7 0 0 1 14 0v5"/><path d="M5 14h3v5H5zM16 14h3v5h-3z"/></svg>
+        <h3>Client Advisors</h3><p>Personal styling, by appointment</p>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletterTitle">
+      <div class="newsletter__media reveal reveal--clip">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80" alt="Ivory and neutral garments hanging on a minimalist rail" loading="lazy">
+      </div>
+      <div class="newsletter__body reveal">
+        <p class="eyebrow">The VELORA Letter</p>
+        <h2 class="display" id="newsletterTitle">Be the first<br>to <em>know</em></h2>
+        <p>Private previews, atelier stories and early access to new collections &mdash; delivered with discretion.</p>
+        <form class="newsletter__form" id="newsletterForm" novalidate>
+          <div class="field">
+            <label for="nlName">First name</label>
+            <input type="text" id="nlName" name="name" autocomplete="given-name" required minlength="2">
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="nlEmail">Email address</label>
+            <input type="email" id="nlEmail" name="email" autocomplete="email" required>
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+          <label class="check">
+            <input type="checkbox" id="nlConsent" name="consent" required>
+            <span>I agree to receive the VELORA Letter and accept the privacy policy.</span>
+          </label>
+          <span class="field__error field__error--consent" aria-live="polite"></span>
+          <button type="submit" class="btn btn--dark btn--block">Subscribe</button>
+          <p class="form-success" id="newsletterSuccess" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#top" class="logo logo--light">VELORA</a>
+        <p>Maison de mode, founded on the belief that what we wear should speak softly and last a lifetime.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="#shop" data-category="New Arrivals">New Arrivals</a></li>
+          <li><a href="#shop" data-category="Women's Wear">Women's Wear</a></li>
+          <li><a href="#shop" data-category="Men's Wear">Men's Wear</a></li>
+          <li><a href="#shop" data-category="Dresses">Dresses</a></li>
+          <li><a href="#shop" data-category="Outerwear">Outerwear</a></li>
+          <li><a href="#shop" data-category="Bags">Bags</a></li>
+          <li><a href="#shop" data-category="Accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>The House</h3>
+        <ul>
+          <li><a href="#edit">The Edit</a></li>
+          <li><a href="#campaign">Campaign</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#newsletter">The VELORA Letter</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Client Care</h3>
+        <ul>
+          <li><button type="button" class="footer-link" data-info="shipping">Shipping &amp; Delivery</button></li>
+          <li><button type="button" class="footer-link" data-info="returns">Returns &amp; Exchanges</button></li>
+          <li><button type="button" class="footer-link" data-info="care">Garment Care</button></li>
+          <li><button type="button" class="footer-link" data-info="contact">Contact Us</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> VELORA. A demonstration storefront &mdash; no real orders or payments are processed.</p>
+      <ul class="socials" aria-label="Social media">
+        <li><a href="#top" aria-label="Instagram (demo)">Instagram</a></li>
+        <li><a href="#top" aria-label="Pinterest (demo)">Pinterest</a></li>
+        <li><a href="#top" aria-label="YouTube (demo)">YouTube</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Shared backdrop -->
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <!-- Bag drawer -->
+  <aside class="drawer" id="bagDrawer" role="dialog" aria-modal="true" aria-labelledby="bagTitle" aria-hidden="true">
+    <div class="drawer__head">
+      <h2 id="bagTitle">Shopping Bag <span id="bagTitleCount"></span></h2>
+      <button class="icon-btn" data-close aria-label="Close shopping bag">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="drawer__progress" id="shipProgress"></div>
+    <div class="drawer__body" id="bagItems"></div>
+    <div class="drawer__foot" id="bagFoot">
+      <div class="summary-row"><span>Subtotal</span><strong id="bagSubtotal">$0</strong></div>
+      <p class="drawer__note">Shipping and taxes calculated at checkout.</p>
+      <button class="btn btn--dark btn--block" id="checkoutBtn" type="button">Proceed to Checkout</button>
+      <button class="text-btn text-btn--center" data-close type="button">Continue shopping</button>
+    </div>
+  </aside>
+
+  <!-- Wishlist drawer -->
+  <aside class="drawer" id="wishlistDrawer" role="dialog" aria-modal="true" aria-labelledby="wishlistTitle" aria-hidden="true">
+    <div class="drawer__head">
+      <h2 id="wishlistTitle">Wishlist <span id="wishlistTitleCount"></span></h2>
+      <button class="icon-btn" data-close aria-label="Close wishlist">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="drawer__body" id="wishlistItems"></div>
+  </aside>
+
+  <!-- Quick view modal -->
+  <div class="modal" id="quickView" role="dialog" aria-modal="true" aria-labelledby="qvTitle" aria-hidden="true">
+    <div class="modal__panel modal__panel--qv">
+      <button class="icon-btn modal__close" data-close aria-label="Close quick view">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="qv" id="qvContent"></div>
+    </div>
+  </div>
+
+  <!-- Checkout -->
+  <div class="modal modal--full" id="checkout" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true">
+    <div class="checkout">
+      <div class="checkout__head">
+        <span class="logo">VELORA</span>
+        <h2 id="checkoutTitle" class="sr-only">Checkout</h2>
+        <ol class="steps" id="checkoutSteps">
+          <li class="is-active">Details</li>
+          <li>Delivery</li>
+          <li>Review</li>
+        </ol>
+        <button class="icon-btn" data-close aria-label="Close checkout">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="checkout__body">
+        <div class="checkout__main">
+          <p class="demo-banner">Demo checkout &mdash; for demonstration only. No payment details are collected and no real order will be placed.</p>
+          <form id="checkoutForm" novalidate>
+            <!-- Step 1 -->
+            <fieldset class="step" data-step="1">
+              <legend>Contact &amp; Shipping Address</legend>
+              <div class="grid-2">
+                <div class="field"><label for="coFirst">First name</label><input id="coFirst" name="first" autocomplete="given-name" required><span class="field__error"></span></div>
+                <div class="field"><label for="coLast">Last name</label><input id="coLast" name="last" autocomplete="family-name" required><span class="field__error"></span></div>
+              </div>
+              <div class="field"><label for="coEmail">Email</label><input id="coEmail" name="email" type="email" autocomplete="email" required><span class="field__error"></span></div>
+              <div class="field"><label for="coAddress">Address</label><input id="coAddress" name="address" autocomplete="street-address" required><span class="field__error"></span></div>
+              <div class="grid-3">
+                <div class="field"><label for="coCity">City</label><input id="coCity" name="city" autocomplete="address-level2" required><span class="field__error"></span></div>
+                <div class="field"><label for="coZip">Postal code</label><input id="coZip" name="zip" autocomplete="postal-code" required pattern="[A-Za-z0-9 \-]{3,10}"><span class="field__error"></span></div>
+                <div class="field"><label for="coCountry">Country</label>
+                  <div class="select-wrap"><select id="coCountry" name="country" required>
+                    <option value="">Select</option><option>India</option><option>United States</option><option>United Kingdom</option><option>France</option><option>Italy</option><option>United Arab Emirates</option><option>Singapore</option>
+                  </select></div><span class="field__error"></span></div>
+              </div>
+              <div class="step__actions"><button type="button" class="btn btn--dark" data-next>Continue to Delivery</button></div>
+            </fieldset>
+
+            <!-- Step 2 -->
+            <fieldset class="step" data-step="2" hidden>
+              <legend>Delivery Method</legend>
+              <label class="radio-card"><input type="radio" name="shipping" value="standard" checked><span><strong>Standard Delivery</strong><small>3&ndash;5 business days</small></span><em data-ship-label="standard"></em></label>
+              <label class="radio-card"><input type="radio" name="shipping" value="express"><span><strong>Express Delivery</strong><small>1&ndash;2 business days</small></span><em>$45</em></label>
+              <label class="radio-card"><input type="radio" name="shipping" value="boutique"><span><strong>Collect in Boutique</strong><small>Ready in 24 hours</small></span><em>Free</em></label>
+              <label class="check check--gift"><input type="checkbox" name="gift" id="coGift"><span>Add signature gift wrapping and a handwritten note (complimentary)</span></label>
+              <div class="step__actions">
+                <button type="button" class="text-btn" data-prev>&larr; Back</button>
+                <button type="button" class="btn btn--dark" data-next>Review Order</button>
+              </div>
+            </fieldset>
+
+            <!-- Step 3 -->
+            <fieldset class="step" data-step="3" hidden>
+              <legend>Review &amp; Confirm</legend>
+              <div class="review" id="reviewBlock"></div>
+              <div class="payment-demo">
+                <strong>Payment</strong>
+                <p>This is a portfolio demonstration. Card entry is intentionally disabled and nothing will be charged.</p>
+              </div>
+              <label class="check"><input type="checkbox" id="coTerms" required><span>I understand this is a demo and no real order will be placed.</span></label>
+              <span class="field__error field__error--terms"></span>
+              <div class="step__actions">
+                <button type="button" class="text-btn" data-prev>&larr; Back</button>
+                <button type="submit" class="btn btn--dark">Place Demo Order</button>
+              </div>
+            </fieldset>
+          </form>
+
+          <!-- Confirmation -->
+          <div class="confirmation" id="confirmation" hidden tabindex="-1">
+            <div class="confirmation__mark" aria-hidden="true">
+              <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-15"/></svg>
+            </div>
+            <p class="eyebrow">Demo order complete</p>
+            <h3 class="display">Thank you, <span id="confName"></span></h3>
+            <p>Your demo order <strong id="confNumber"></strong> has been simulated successfully. As this is a demonstration storefront, <strong>no real order was placed and no payment was taken</strong>.</p>
+            <div class="confirmation__summary" id="confSummary"></div>
+            <button class="btn btn--dark" type="button" id="confDone">Return to VELORA</button>
+          </div>
+        </div>
+        <aside class="checkout__summary" aria-labelledby="orderSummaryTitle">
+          <h3 id="orderSummaryTitle">Order Summary</h3>
+          <ul class="summary-items" id="summaryItems"></ul>
+          <div class="summary-row"><span>Subtotal</span><span id="sumSubtotal"></span></div>
+          <div class="summary-row"><span>Shipping</span><span id="sumShipping"></span></div>
+          <div class="summary-row"><span>Estimated tax (8%)</span><span id="sumTax"></span></div>
+          <div class="summary-row summary-row--total"><span>Total</span><strong id="sumTotal"></strong></div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- Info modal (client care) -->
+  <div class="modal" id="infoModal" role="dialog" aria-modal="true" aria-labelledby="infoTitle" aria-hidden="true">
+    <div class="modal__panel modal__panel--sm">
+      <button class="icon-btn modal__close" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <p class="eyebrow">Client Care</p>
+      <h2 class="display-sm" id="infoTitle"></h2>
+      <div id="infoBody" class="info-body"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
